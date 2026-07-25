@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lanaria — Amigurumis hechos a mano</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- 
+###############
+###  HEADER ###
+############### 
+-->
+<header class="site-header">
+  <div class="header-inner">
+    
+    <div class="brand-container">
+      <div class="logo">ANGIE</div>
+      <h6 class="logo2">amigurumis</h6> 
+    </div>
+    
+    <nav class="main-nav">
+      <a href="#mini">Mini</a>
+      <a href="#clasico">Clásicos</a>
+      <a href="#premium">Premium</a>
+      <a href="#preguntas">Preguntas</a>
+    </nav>
+    <a href="#contacto" class="header-contact">Escríbeme</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-top">
+
+    <div class="brand-container">
+      <div class="logo">ANGIE</div>
+      <h6 class="logo2">amigurumis</h6> 
+    </div>
+
+    <button class="menu-close" id="menuClose" aria-label="Cerrar menú">×</button>
+  </div>
+  <div class="mobile-menu-links">
+    <a href="#mini" class="menu-link"><span>Mini</span><span class="n">01</span></a>
+    <a href="#clasico" class="menu-link"><span>Clásicos</span><span class="n">02</span></a>
+    <a href="#premium" class="menu-link"><span>Premium</span><span class="n">03</span></a>
+    <a href="#preguntas" class="menu-link"><span>Preguntas</span><span class="n">04</span></a>
+  </div>
+  <a href="#contacto" class="mobile-menu-cta menu-link">Escríbeme</a>
+</div>
+
+<div class="intro">
+  <span class="eyebrow">Mi trabajo</span>
+  <h1>Según la tradición</h1>
+  <p>Cada amigurumi tiene un alma que lo convierte en un fiel compañero que brinda consuelo y protección</p>
+</div>
+
+<!-- Carrusel Destacado -->
+<div class="carousel-wrap">
+  <button class="carousel-arrow prev" id="carousel-prev" aria-label="Anterior">‹</button>
+  <div class="carousel" id="carousel"></div>
+  <button class="carousel-arrow next" id="carousel-next" aria-label="Siguiente">›</button>
+  <div class="carousel-dots" id="carousel-dots"></div>
+</div>
+
+<!-- MINI -->
+<section id="mini" class="collection">
+  <div class="collection-head">
+    <span class="eyebrow">Colección 01</span>
+    <h2>Mini &amp; decorativos</h2>
+    <p>Llaveros y piezas pequeñas, ideales de regalo o para conocer el trabajo antes de un encargo más grande.</p>
+    <span class="collection-price">Desde $180 MXN</span>
+  </div>
+  <div class="lux-grid" id="grid-mini"></div>
+</section>
+
+<!-- CLASICOS -->
+<section id="clasico" class="collection">
+  <div class="collection-head">
+    <span class="eyebrow">Colección 02</span>
+    <h2>Amigurumis clásicos</h2>
+    <p>El tamaño más pedido: animales y personajes de unos 20–25 cm, listos para abrazar.</p>
+    <span class="collection-price">Desde $420 MXN</span>
+  </div>
+  <div class="lux-grid" id="grid-clasico"></div>
+</section>
+
+<!-- PREMIUM -->
+<section id="premium" class="collection">
+  <div class="collection-head">
+    <span class="eyebrow">Colección 03</span>
+    <h2>Piezas grandes &amp; personalizadas</h2>
+    <p>Retratos de mascotas, tamaños grandes y encargos con muchos detalles. Se cotizan según diseño.</p>
+    <span class="collection-price">Desde $900 MXN</span>
+  </div>
+  <div class="lux-grid" id="grid-premium"></div>
+</section>
+
+<!-- FAQ -->
+<section id="preguntas">
+  <div class="faq-head">
+    <span class="eyebrow" style="color:var(--ink-soft)">Antes de escribir</span>
+    <h2>Preguntas frecuentes</h2>
+  </div>
+  <div class="faq-list">
+    <details open>
+      <summary>¿Cuánto tardan en hacer una pieza?</summary>
+      <p>Las mini y clásicas suelen tardar de 5 a 10 días. Las personalizadas grandes pueden tardar hasta 3 semanas, según el detalle.</p>
+    </details>
+    <details>
+      <summary>¿Hacen envíos?</summary>
+      <p>Sí, a todo el país. El costo de envío se cotiza aparte según tu ciudad.</p>
+    </details>
+    <details>
+      <summary>¿Puedo pedir un personaje que no está en el catálogo?</summary>
+      <p>Claro, la mayoría de los pedidos personalizados empiezan así. Mándame una foto o referencia y te digo si es posible y el precio.</p>
+    </details>
+    <details>
+      <summary>¿Cómo cuido mi amigurumi?</summary>
+      <p>Evita lavarlo en lavadora; se limpia con un paño húmedo y jabón neutro, y se deja secar a la sombra.</p>
+    </details>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contacto">
+  <h2>¿Ya sabes cuál quieres?</h2>
+  <p>Escríbeme y lo tejemos a tu medida.</p>
+  <a href="https://wa.me/0000000000" class="footer-cta" id="wa-footer">Contactar por WhatsApp</a>
+  <div class="foot-note">Lanaria · Amigurumis hechos a mano</div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal-content">
+    <button class="modal-close" id="modal-close" aria-label="Cerrar">×</button>
+    <div class="modal-image-wrap">
+      <img id="modal-img" src="" alt="">
+    </div>
+    <div class="modal-body">
+      <span class="modal-category" id="modal-category"></span>
+      <h3 class="modal-name" id="modal-name"></h3>
+      <p class="modal-price" id="modal-price"></p>
+      <p class="modal-desc" id="modal-desc"></p>
+      <a class="modal-cta" id="modal-cta" target="_blank">Preguntar por WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
