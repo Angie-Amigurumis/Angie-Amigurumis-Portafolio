@@ -1,7 +1,6 @@
 // const AIRTABLE_TOKEN = '';
 const WHATSAPP_NUMBER = '0000000000';
 
-const API_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${encodeURIComponent(AIRTABLE_TABLE_NAME)}`;
 const GRID_MAP = { '1': 'grid-mini', '2': 'grid-clasico', '3': 'grid-premium' };
 const CAT_NAMES = { '1': 'Mini', '2': 'Clásico', '3': 'Premium' };
 const CAT_COLORS = { '1': 'var(--pink-deep)', '2': 'var(--blue-deep)', '3': 'var(--green-deep)' };
