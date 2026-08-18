@@ -2,8 +2,8 @@ name: Actualizar Catalogo Airtable
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Automático: todos los días a medianoche
-  workflow_dispatch: # Manual: te pone un botón en GitHub para actualizar cuando quieras
+    - cron: '0 0 * * *'
+  workflow_dispatch: # boton para actualizar
 
 jobs:
   actualizar-json:
@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Ejecutar script para descargar datos de Airtable
+      - name: Ejecutar script para descargar datos 
         env:
           AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
         run: node fetch_data.js
