@@ -1,0 +1,240 @@
+{
+  "records": [
+    {
+      "id": "rec5NTrbmK2y2hTKu",
+      "createdTime": "2026-08-12T01:16:41.000Z",
+      "fields": {
+        "Precio": 1250,
+        "Imagen": [
+          {
+            "id": "attTecRQrw3QL74Qs",
+            "width": 1200,
+            "height": 1600,
+            "url": "https://v5.airtableusercontent.com/v3/u/56/56/1787025600000/2FhXw_SiZ3V6Us2am9fjZg/sudpN7rhMD_zYaigDI1G3FLDWmXggUsQjOyt8OpIqko9Kt_CbywhqYkVHwwvx4znUIthW45bAIXsNR-XWsi8uDtdIaJRRd5wdW1wL069Nqm2wB8fDyif6QNPHHFdy14ammUz3UPORPWcuqEYxpx9A3MJTTIx4Jm74sTSPS9W2I4/sk0i1zd6Dx0rbXlDqBR0SKXAtshxnwDL4ZU29Vj8X3M",
+            "filename": "tipo3.jpeg",
+            "size": 138090,
+            "type": "image/jpeg",
+            "thumbnails": {
+              "small": {
+                "url": "https://v5.airtableusercontent.com/v3/u/56/56/1787025600000/TfYbAuTSX7SSxCkW_XL8gg/iYeYqAfvne6R1SO8f0YzSMwUA1ARe1e_eS1dRlh8nFnl5jpN5XSn3-nA8wB211Hj-GBmOwnlWqfsPeTQSDEvURqm1mtO840hpvFPTShvmbzmC6LSLId4_jkmcPIe78gUACSTtatfKlCI9_FVI5o1Gw/67OF1DMKiGNrYtypGt6BLs_gI284C-6EYIafhvncwDI",
+                "width": 27,
+                "height": 36
+              },
+              "large": {
+                "url": "https://v5.airtableusercontent.com/v3/u/56/56/1787025600000/EoNzeyNBV8ngTKSR15wOKg/PJjXtrJVA2qfy6MD55XsyjXqWPh2YxF_QV0APhvRsHeZYJV1NTErjoN5gkXSuoND9x7YsEM-7WTZcfjpdk-C5Y64Kv8HabN_tzRltBQhxZYyfEeQ5KVcHz9FDWllivYNx3DvaTVihIniqPEvWGGdAQ/EhzgDdgGKP2iAAXf8bFOoOkbsWs7emN-n-N2qjEYLTI",
+                "width": 512,
+                "height": 683
+              },
+              "full": {
+                "url": "https://v5.airtableusercontent.com/v3/u/56/56/1787025600000/afBdPefObKapF_H-gh95Dg/IzAgsQ-dWhZrxIx5Qnku2zXSnn8eYVb0SWanhh5SkS7LX-TeWX9tFiF4YSF0qoGecTH2bjNE-Ii3nibSYFX4lwvPtOytm7BI-_iVzyn0cLMoK53By-X34a3vQWcowyFqzqm6Wv69CWSAW71ES3zFaA/_BPfLmbn3QJXD1doktm2mG8Tf9gzdpWmPH35FIs6UiQ",
+                "width": 1200,
+                "height": 1600
+              }
+            }
+          }
+        ],
+        "Categoria": "3",
+        "Carrusel": true,
+        "Descripcion": "Planta carnivora de plantas contra zombies, alto nivel de complejidad, flexible, articulada, 30x15x15",
+        "Nombre": "Planta Carnivora"
+      }
+    },
+    {
+      "id": "recFgwjXwxEFwYpW6",
+      "createdTime": "2026-08-12T00:53:58.000Z",
+      "fields": {
+        "Precio": 120,
+        "Imagen": [
+          {
+            "id": "att2X1NKRlkx0FNhp",
+            "width": 1200,
+            "height": 1600,
+            "url": "https://v5.airtableusercontent.com/v3/u/56/56/1787025600000/aJ_HXNcavUdLwA08QHTHDA/tx2xs1apFtWJBpS65RjaGbJq1vpyy6JKgsw8NtXAbGZ4X2VE0i18Dm-OliLkj15onwd5UdNtmjC7OH3pQpcTAgiHpytWET2sSroTzn-TBxTnuLeUtwjhaSfrX9Ik6hTWRLCPNtgVPqluGCwaL9g2uXSgZIcbY02EWTT0_WiSneo/gKJmeYDWcaxbhRX2FGJvyHzWjqm3Q8j3GKLgzrcVW8k",
+            "filename": "tipo1.jpeg",
+            "size": 100594,
+            "type": "image/jpeg",
+            "thumbnails": {
+              "small": {
+                "url": "https://v5.airtableusercontent.com/v3/u/56/56/1787025600000/57WLDVtKL_bsRjqZiC5iYA/WtCWkFyeBQHRG6MpGfB86bzvbA48ne8DM1pUQY18h2kVGWtl1vYqA85tTkmTvzbHy746dWt412FPs8XuGoab-4Dn4SpsSzDtoMOtyearZtW0bd42jm4O1IYKhLQn4XZuwS0glTIJbVJZtstSKkBIPg/i6_1r56a1JS6JyTwI4JZ1KrvWDYsrC2RwGArUgdMr20",
+                "width": 27,
+                "height": 36
+              },
+              "large": {
+                "url": "https://v5.airtableusercontent.com/v3/u/56/56/1787025600000/_k4vSo6KFMLf_uV3INZauQ/MnmcXJzsX926RRBBe-qTtt0H7MvMqMVxPuuxYYsGc6ejd5BCYfXH4B-vK9Nw31jB8SkzTfG0_wdz9X8JdDBRqm82coM4wYbwJ_8tt0t-Vm4JhQMXugrhDCTPwxZwTTEs1gH2BH0LPLYBtX3w9pBVFg/1dN9EoaO3TXeaXWlD7f2YSCpWuhEjY3_m2oTYIHfv8g",
+                "width": 512,
+                "height": 683
+              },
+              "full": {
+                "url": "https://v5.airtableusercontent.com/v3/u/56/56/1787025600000/63RtLncbQmrf8H_iqidd-A/Ey5DbBTl1zxtvrFpRNSwdR6eaGJgDRsDW-rTIiihOBqvgVToinJaQKiO5yk4rI9IeAqYcHOGYZu1e8GP02f56Gp_olrFLg4YBJJVhGIF2Iyknwru2-EnUzmP-NyqTiw_6me9kC1o91TuhdRyTjkDpA/mBaV5_FchCsCZpO8xhN4q_kjVzIJ7mQnUhSDMrTleQo",
+                "width": 1200,
+                "height": 1600
+              }
+            }
+          }
+        ],
+        "Categoria": "1",
+        "Carrusel": true,
+        "Descripcion": "Llavero de perrito, replica de foto,\n7x7x7cm",
+        "Nombre": "Perrito"
+      }
+    },
+    {
+      "id": "recJrSmmrRSWi3YZX",
+      "createdTime": "2026-08-12T02:19:44.000Z",
+      "fields": {
+        "Precio": 123,
+        "Imagen": [
+          {
+            "id": "attdeCGN6gXzSpoyN",
+            "width": 1200,
+            "height": 757,
+            "url": "https://v5.airtableusercontent.com/v3/u/56/56/1787025600000/PaL-59AzOh6EEt57JrBtSQ/_p-jDlbq48EkpGolK4XroyLCd1wjIVvlcc3MO30Df2oCEi2rDHf3cnif9vd8r8Lv4IzfZZjU24S6FYTYN2uDMdW1LvgJOc6B7PLeRhA2Df-lobbd8ce1evnLWsMY69ms9HZTMFXnajjHFbfFz6kcZA/4zACaM_pkC_p4Y4NRNxRgrcI3M8eFKChXyCjIgzBLZQ",
+            "filename": "r.jpg",
+            "size": 94403,
+            "type": "image/jpeg",
+            "thumbnails": {
+              "small": {
+                "url": "https://v5.airtableusercontent.com/v3/u/56/56/1787025600000/O_BRwMt1ADpIF6vLRRSHIg/FHRRFWJvn6hX1PEoqEqGs4KqdApW0RWurXCRWSGCRsjz0ItgI7plsXzLrfM3hhHws86MCcKxpdNLznta3z0jkANA84InhzAq8NmyHM_AURIKDSCMLBJ_Lt8kfAHCRklKXC950b6kxqfjauNZSFyh2g/m005AQerTsIBZiGgumlvjjbX4Mzu_C2cfudebspoVg4",
+                "width": 57,
+                "height": 36
+              },
+              "large": {
+                "url": "https://v5.airtableusercontent.com/v3/u/56/56/1787025600000/Ahqdf_k4X9_UA07C3fWrzA/nSPfie8cEhgdFDNg1Tlt2_vQhqDgQFxtC-e6ykotMOjCkVT3NoMJu1VQp6Fu3etmantW-kO5A7YSrxCp-x6SwcKD8aRfC5FD4HpEZ3bFbvBnMpimlbXOKbCy7Vz_iqw1RKIs_91i-8Vg6Q3gXYwntw/1nqF0a-LT8Ougu677uOXSUIQjhZuGhAU-V2vDLHxwic",
+                "width": 812,
+                "height": 512
+              },
+              "full": {
+                "url": "https://v5.airtableusercontent.com/v3/u/56/56/1787025600000/nLzCXhPE8635yxmZtgbCVg/ETYcYWsJlt7s8kAD-arjI7jnOtUqKMSCiefA5IbMerbvf5RUwXWQ9wmvdRwf5q1bmKcTGkMexygzYtoWJUsMjtA-iX6E7_jjI1DotV2EqSbrRdGK-gUS_9OliT8T9kyfG0X8qUC6zeT162fCY_BLMA/atVv6lnSOkjbenfK2piewL_O_l-wGbYtcnIGFgAZNf8",
+                "width": 1200,
+                "height": 757
+              }
+            }
+          }
+        ],
+        "Categoria": "1",
+        "Carrusel": true,
+        "Nombre": "PRUEBA"
+      }
+    },
+    {
+      "id": "recRPDhQqkpkKXtuU",
+      "createdTime": "2026-08-12T02:22:45.000Z",
+      "fields": {}
+    },
+    {
+      "id": "reciRs5X6FQcQDxMK",
+      "createdTime": "2026-08-12T02:20:28.000Z",
+      "fields": {
+        "Precio": 123,
+        "Imagen": [
+          {
+            "id": "attLa5hlVrwI4QUnE",
+            "width": 1200,
+            "height": 675,
+            "url": "https://v5.airtableusercontent.com/v3/u/56/56/1787025600000/1x3abjTRrLDAvs3C2wnb0w/HZKXA3yh9Lr4rnHMF8eNkKniF0ApQP8FB-6XJNfDUxYKmdZ-S0y6yja1AzJP8aVfbPtEV1b3L-zbzGaWFNqMLOokBw3mBlqyqPIm--n5e6phiDynwwPiNDnj__oaULkSip7N1pNvraK92aAALJ5u5g/rR-TK_mwxzRF0tMdbaJr1KM8wAYFxcKLomIfzo2ty1k",
+            "filename": "e.jpg",
+            "size": 131396,
+            "type": "image/jpeg",
+            "thumbnails": {
+              "small": {
+                "url": "https://v5.airtableusercontent.com/v3/u/56/56/1787025600000/3dkRbLbpt74BtdNyFXWiPg/bWabSCbYhghce_Le6dd0vrXiNHW0KLV0Py27zCfuGtXETepdewJIoNyvT-szoXOBFpWJ5iWvr2czvoeF3142b_3sgYc5_-oj_nwHCuNauo-l0afsTEHzDFrXQXJbp5OxeVUIk6IWLN42sSRhUjiS4g/h2OVLt_K1KOci3wIZsub-pgb5zkiMFV6PhjH-mIsurE",
+                "width": 64,
+                "height": 36
+              },
+              "large": {
+                "url": "https://v5.airtableusercontent.com/v3/u/56/56/1787025600000/xPL6ZMVXAtjlp1MuLXGHMw/GzG-SwcbpzSa6rOHCrCEjCNxWIdizDrr-YE3hexoqnWuBKq3aABxPAanx_eHr9P0t5jpxFqHy4YRoR_6mbMmuiZKaQS8aPSOOH9aInc7UILYn_JjjV5uXIFMUism3qfoakOGrwuabsIYpJFTYz-F_A/K6954ymRLaUY3qZRiuJX2AJXyHZ36k1vopfMV8GeLQ4",
+                "width": 910,
+                "height": 512
+              },
+              "full": {
+                "url": "https://v5.airtableusercontent.com/v3/u/56/56/1787025600000/kPu4zIDzNmY3yhtJear64A/C59HpQYn8XfUFJNDUsKNOLv-PioD0JpleIz0HkEyF9ermxizrXYpKBRHVrTFUD68HgfO9S2VtAiqizbEd9LkqUt0J2XVEc1hcaXvhLQ-vpeenzunK4cP3tQouRePGTwIjCoWnxzxRdXl6WsFJwGXlw/uoB_XPsVRsyoMBoIQEY7OiIOGbNwS9xcMx3FNWD15ic",
+                "width": 1200,
+                "height": 675
+              }
+            }
+          }
+        ],
+        "Categoria": "2",
+        "Carrusel": true,
+        "Nombre": "PRUEBA2"
+      }
+    },
+    {
+      "id": "recoHZFw8jb9Gz47D",
+      "createdTime": "2026-08-12T02:20:52.000Z",
+      "fields": {
+        "Precio": 321,
+        "Imagen": [
+          {
+            "id": "att6qbFR2J95Ko0Z4",
+            "width": 850,
+            "height": 336,
+            "url": "https://v5.airtableusercontent.com/v3/u/56/56/1787025600000/WpmlpjFbYkKeNIgluO7Qfw/Ht4loBvw8T1M9wkaXF-4ekLqV9EU1zb3pPv-7qsBA1rNYJWG-ISaHL5aCPYjQ_SYDp5vMY3CiLIBv5mw6nzwZozYO2cOKnD6vYxkv5x1syNZpVcxac4-uYD-K8Xmb7UnSp6H2oMVRMwr3L5_a5Wfjw/08toGJRvfrON7KrNaNDmG1N0Ebbz914Jax0AzCW0CkQ",
+            "filename": "w.jpg",
+            "size": 29985,
+            "type": "image/jpeg",
+            "thumbnails": {
+              "small": {
+                "url": "https://v5.airtableusercontent.com/v3/u/56/56/1787025600000/QQDIM-edxcmDc0IIOBd-zg/gdk99U3ELDUmW2DWjcVGm2TCb4XHuKjLw9E8cT0oJC0Ea2uDpLo1-2xxKKeqIvhAnJeTR6Y4MMiiJS_QHUk4xcw3x1eRePgTCw3rmVnmMFEVYW9EAVTqd-YlhV5UnXHsAd3-j84FZbjtcg1AcOElVA/FqUhvsbtBVgia9zPxtGTmqVfaSxp-oEIOyKNnbk2k1Q",
+                "width": 91,
+                "height": 36
+              },
+              "large": {
+                "url": "https://v5.airtableusercontent.com/v3/u/56/56/1787025600000/ubMm-3Ii1m7RBxxBgdUbvw/Rf9qIljCBVBBEpqPU8HiPFzfiYmGThgtXxMkziGqQBY5OldVH1vDAOvOinSS_9uVpArlYQwANjnXfcAK8QR67XSERnQ5Wur6wJnNh7DHk63xRO7ur7_jg3zBfA3dl9vQV1xNMol-d9n8nXEzmZCuvA/JaVGS0XdHFrD7nua_zx-m7ttm22_pxo9zFX_P3z5zio",
+                "width": 850,
+                "height": 336
+              },
+              "full": {
+                "url": "https://v5.airtableusercontent.com/v3/u/56/56/1787025600000/rL_8ifYbplWVUbvar64gTg/uBQMvzjhWKc6eEh4-TwpY8yqw-NbQtiaW1Fsu6voHRBbg5jWukHE77ctAXWfDv6Rj3rlUW7GhtvBBL3hE8zjl1Na8gpKbaUvf3cHWfPeTFB971SGxre7xH3vzqzkA9oy85UvMOieB2GmAU40dqIwog/X8HuU5ifx5HVOfJwp0i4h3a_F4L2eJvNQx3GgOVMnZs",
+                "width": 850,
+                "height": 336
+              }
+            }
+          }
+        ],
+        "Categoria": "3",
+        "Carrusel": true,
+        "Nombre": "PRUEBA3"
+      }
+    },
+    {
+      "id": "recr5sbr4YPc6WqEr",
+      "createdTime": "2026-08-12T01:14:36.000Z",
+      "fields": {
+        "Precio": 850,
+        "Imagen": [
+          {
+            "id": "attvLLl1zysNh7HBV",
+            "width": 1200,
+            "height": 1600,
+            "url": "https://v5.airtableusercontent.com/v3/u/56/56/1787025600000/eHxNOmTOOhZq9qs0GnAwyA/Q2WiWWauukONdsLO0GvytSGft7eXxwWp5j0L6B9Mb7aMYmWoDDUNp8FB4yiivHbA59VqfbH2ST88tBNPk0aonVHjwzkYaXVEuThXoATVsrab1pX2wj-lEJPbafzpyWMMa0Gy5IRcDKsVp20KPUnx-DOoxsenkiueCefuqIkibps/HtPyzbo_z4WKWAIbKQJ3o1lvadrwFI3b9owGdPqULb4",
+            "filename": "tipo2.jpeg",
+            "size": 125066,
+            "type": "image/jpeg",
+            "thumbnails": {
+              "small": {
+                "url": "https://v5.airtableusercontent.com/v3/u/56/56/1787025600000/3HYQYIac4klDajDJkmxzCQ/onUFlq7gRvvkt7mkbwVxAwxXGiD4sU8pq0Uz50uOe6_qq6maIZF_WA0mCyfD94T6FTyCeOhCCmvXkAGzEU7HcQ626l7tpzXkJzccXF1oi3uSyBE1AZ9FMhEexvPHwlTmbE7qTgGhfnfSZilTWYe0AA/vlTX54X_ODq5e_LZURWcjuVCcSJy6nlII195GM7y8WE",
+                "width": 27,
+                "height": 36
+              },
+              "large": {
+                "url": "https://v5.airtableusercontent.com/v3/u/56/56/1787025600000/nTzd9DdlZKAZ6Nohm9QZdg/LfWUTdroKtj7etXh3h6JyGvt0q5Z7_HOz3WBw_EJ5jl6X10ARGpn36rvCGyvRiIB_SpLNQMS62gmRvIGFMZ8_vjPSHHUykdzq5u0sRo7HEFs73iJuLSam754fZ-A99U_F-Ny1jqmrQHC4fwQ3r-mrw/VOa6RDKH3bsCdqBWs-auLkgN4mqDA7f9sQJEM2o4gF8",
+                "width": 512,
+                "height": 683
+              },
+              "full": {
+                "url": "https://v5.airtableusercontent.com/v3/u/56/56/1787025600000/D-bg9gZSMxBDZIrKDN1b9Q/17WBuvN-qbanyquooQghTLEZNEKvlF8by50yHQ8wYBIlsQW9_s-m0QK1zlScRUFQ-MfbMeGFAwGXqqlEsNKtXTxJvpfklivcxkcqkZD1nY_ffPglyoPMDcTELMTjkvlWzTi2GhJ7g6y7n_tzZshDSg/ML8ogsDQ0jl-0ERjFx6KNxHchUwNexvbkysVPFx1nds",
+                "width": 1200,
+                "height": 1600
+              }
+            }
+          }
+        ],
+        "Categoria": "2",
+        "Carrusel": true,
+        "Descripcion": "Muneca con base de madera, estambre brilloso, 25cm x 15x15\n",
+        "Nombre": "Selena Quintanilla"
+      }
+    }
+  ]
+}
