@@ -3,156 +3,169 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lanaria — Amigurumis hechos a mano</title>
+<title>Angie Amigurumis</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-<!-- 
-###############
-###  HEADER ###
-############### 
--->
-<header class="site-header">
-  <div class="header-inner">
-    
-    <div class="brand-container">
-      <div class="logo">ANGIE</div>
-      <h6 class="logo2">amigurumis</h6> 
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+
+      <div class="brand-container">
+        <img src="img/logo.jpg" alt="Angie Amigurumis" class="logo-img" href="index.html">
+        <div class="logo" href="index.html">ANGIE</div>
+        <h6 class="logo2" href="index.html">amigurumis</h6> 
+      </div>
+
+      <nav class="main-nav">
+        <a href="#mini">Mini</a>
+        <a href="#clasico">Clásicos</a>
+        <a href="#premium">Premium</a>
+        <a href="#preguntas">Preguntas</a>
+      </nav>
+      <a href="#contacto" class="header-contact">Escríbeme</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    
-    <nav class="main-nav">
-      <a href="#mini">Mini</a>
-      <a href="#clasico">Clásicos</a>
-      <a href="#premium">Premium</a>
-      <a href="#preguntas">Preguntas</a>
-    </nav>
-    <a href="#contacto" class="header-contact">Escríbeme</a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
-      <span></span><span></span><span></span>
-    </button>
+  </header>
+
+  <!-- MENU  -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-top">
+
+      <div class="brand-container">
+        <div class="logo">ANGIE</div>
+        <h6 class="logo2">amigurumis</h6> 
+      </div>
+
+      <button class="menu-close" id="menuClose" aria-label="Cerrar menú">×</button>
+    </div>
+    <div class="mobile-menu-links">
+      <a href="#mini" class="menu-link"><span>Mini</span><span class="n">01</span></a>
+      <a href="#clasico" class="menu-link"><span>Clásicos</span><span class="n">02</span></a>
+      <a href="#premium" class="menu-link"><span>Premium</span><span class="n">03</span></a>
+      <a href="#preguntas" class="menu-link"><span>Preguntas</span><span class="n">04</span></a>
+    </div>
+    <a href="#contacto" class="mobile-menu-cta menu-link">Escríbeme</a>
   </div>
-</header>
 
+  <div class="hero-section">
 
-<div class="mobile-menu" id="mobileMenu">
-  <div class="mobile-menu-top">
-
-    <div class="brand-container">
-      <div class="logo">ANGIE</div>
-      <h6 class="logo2">amigurumis</h6> 
+    <div class="intro">
+      <span class="eyebrow">Angie Amigurumis</span>
+      <h1>Según la tradición</h1>
+      <p>Cada amigurumi <strong>tiene un alma</strong> que lo convierte en 
+        un <strong>fiel compañero</strong> que brinda <strong>consuelo y protección</strong></p>
     </div>
 
-    <button class="menu-close" id="menuClose" aria-label="Cerrar menú">×</button>
-  </div>
-  <div class="mobile-menu-links">
-    <a href="#mini" class="menu-link"><span>Mini</span><span class="n">01</span></a>
-    <a href="#clasico" class="menu-link"><span>Clásicos</span><span class="n">02</span></a>
-    <a href="#premium" class="menu-link"><span>Premium</span><span class="n">03</span></a>
-    <a href="#preguntas" class="menu-link"><span>Preguntas</span><span class="n">04</span></a>
-  </div>
-  <a href="#contacto" class="mobile-menu-cta menu-link">Escríbeme</a>
-</div>
-
-<div class="intro">
-  <span class="eyebrow">Mi trabajo</span>
-  <h1>Según la tradición</h1>
-  <p>Cada amigurumi tiene un alma que lo convierte en un fiel compañero que brinda consuelo y protección</p>
-</div>
-
-<!-- Carrusel Destacado -->
-<div class="carousel-wrap">
-  <button class="carousel-arrow prev" id="carousel-prev" aria-label="Anterior">‹</button>
-  <div class="carousel" id="carousel"></div>
-  <button class="carousel-arrow next" id="carousel-next" aria-label="Siguiente">›</button>
-  <div class="carousel-dots" id="carousel-dots"></div>
-</div>
-
-<!-- MINI -->
-<section id="mini" class="collection">
-  <div class="collection-head">
-    <span class="eyebrow">Colección 01</span>
-    <h2>Mini &amp; decorativos</h2>
-    <p>Llaveros y piezas pequeñas, ideales de regalo o para conocer el trabajo antes de un encargo más grande.</p>
-    <span class="collection-price">Desde $180 MXN</span>
-  </div>
-  <div class="lux-grid" id="grid-mini"></div>
-</section>
-
-<!-- CLASICOS -->
-<section id="clasico" class="collection">
-  <div class="collection-head">
-    <span class="eyebrow">Colección 02</span>
-    <h2>Amigurumis clásicos</h2>
-    <p>El tamaño más pedido: animales y personajes de unos 20–25 cm, listos para abrazar.</p>
-    <span class="collection-price">Desde $420 MXN</span>
-  </div>
-  <div class="lux-grid" id="grid-clasico"></div>
-</section>
-
-<!-- PREMIUM -->
-<section id="premium" class="collection">
-  <div class="collection-head">
-    <span class="eyebrow">Colección 03</span>
-    <h2>Piezas grandes &amp; personalizadas</h2>
-    <p>Retratos de mascotas, tamaños grandes y encargos con muchos detalles. Se cotizan según diseño.</p>
-    <span class="collection-price">Desde $900 MXN</span>
-  </div>
-  <div class="lux-grid" id="grid-premium"></div>
-</section>
-
-<!-- FAQ -->
-<section id="preguntas">
-  <div class="faq-head">
-    <span class="eyebrow" style="color:var(--ink-soft)">Antes de escribir</span>
-    <h2>Preguntas frecuentes</h2>
-  </div>
-  <div class="faq-list">
-    <details open>
-      <summary>¿Cuánto tardan en hacer una pieza?</summary>
-      <p>Las mini y clásicas suelen tardar de 5 a 10 días. Las personalizadas grandes pueden tardar hasta 3 semanas, según el detalle.</p>
-    </details>
-    <details>
-      <summary>¿Hacen envíos?</summary>
-      <p>Sí, a todo el país. El costo de envío se cotiza aparte según tu ciudad.</p>
-    </details>
-    <details>
-      <summary>¿Puedo pedir un personaje que no está en el catálogo?</summary>
-      <p>Claro, la mayoría de los pedidos personalizados empiezan así. Mándame una foto o referencia y te digo si es posible y el precio.</p>
-    </details>
-    <details>
-      <summary>¿Cómo cuido mi amigurumi?</summary>
-      <p>Evita lavarlo en lavadora; se limpia con un paño húmedo y jabón neutro, y se deja secar a la sombra.</p>
-    </details>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer id="contacto">
-  <h2>¿Ya sabes cuál quieres?</h2>
-  <p>Escríbeme y lo tejemos a tu medida.</p>
-  <a href="https://wa.me/0000000000" class="footer-cta" id="wa-footer">Contactar por WhatsApp</a>
-  <div class="foot-note">Lanaria · Amigurumis hechos a mano</div>
-</footer>
-
-<!-- MODAL -->
-<div class="modal-overlay" id="modal-overlay">
-  <div class="modal-content">
-    <button class="modal-close" id="modal-close" aria-label="Cerrar">×</button>
-    <div class="modal-image-wrap">
-      <img id="modal-img" src="" alt="">
+    <div class="carousel-wrap">
+      <button class="carousel-arrow prev" id="carousel-prev" aria-label="Anterior">‹</button>
+      <div class="carousel" id="carousel"></div>
+      <button class="carousel-arrow next" id="carousel-next" aria-label="Siguiente">›</button>
+      <div class="carousel-dots" id="carousel-dots"></div>
     </div>
-    <div class="modal-body">
-      <span class="modal-category" id="modal-category"></span>
-      <h3 class="modal-name" id="modal-name"></h3>
-      <p class="modal-price" id="modal-price"></p>
-      <p class="modal-desc" id="modal-desc"></p>
-      <a class="modal-cta" id="modal-cta" target="_blank">Preguntar por WhatsApp</a>
+
+  </div>
+
+  <!-- MINI -->
+  <section id="mini" class="collection">
+    <div class="collection-head">
+      <span class="eyebrow">Colección 01</span>
+      <h2>Mini</h2>
+      <p>Llaveros o piezas pequeñas, <strong>ideales</strong> para <strong>regalo</strong> o para conocer el trabajo antes de un encargo más grande.</p>
+      <span class="collection-price">Desde <strong>$180</strong> MXN</span>
+    </div>
+    <div class="lux-grid" id="grid-mini"></div>
+  </section>
+
+  <!-- CLASICOS -->
+  <section id="clasico" class="collection">
+    <div class="collection-head">
+      <span class="eyebrow">Colección 02</span>
+      <h2>Clasicos</h2>
+      <p>El tamaño <strong>más pedido</strong>: animales  personajes de unos 20–25 cm, listos para <strong>abrazar</strong>.</p>
+      <span class="collection-price">Desde $420 MXN</span>
+    </div>
+    <div class="lux-grid" id="grid-clasico"></div>
+  </section>
+
+  <!-- PREMIUM -->
+  <section id="premium" class="collection">
+    <div class="collection-head">
+      <span class="eyebrow">Colección 03</span>
+      <h2>Premium</h2>
+      <p>Retratos de mascotas, tamaños grandes y encargos con <strong>muchos detalles</strong>. Se cotizan según diseño.</p>
+      <span class="collection-price">Desde $900 MXN</span>
+    </div>
+    <div class="lux-grid" id="grid-premium"></div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="preguntas">
+    <div class="faq-head">
+      <span class="eyebrow" style="color:var(--ink-soft)">Antes de escribir</span>
+      <h2>Preguntas frecuentes</h2>
+    </div>
+    <div class="faq-list">
+      <details open>
+        <summary>¿Cuánto tardan en hacer una pieza?</summary>
+        <p>Las mini y clásicas suelen tardar de 5 a 10 días. Las personalizadas grandes pueden tardar hasta 3 semanas, según el detalle.</p>
+      </details>
+      <details>
+        <summary>¿Hacen envíos?</summary>
+        <p>Sí, a todo el país. El costo de envío se cotiza aparte según tu ciudad.</p>
+      </details>
+      <details>
+        <summary>¿Puedo pedir un personaje que no está en el catálogo?</summary>
+        <p>Claro, la mayoría de los pedidos personalizados empiezan así. Mándame una foto o referencia y te digo si es posible y el precio.</p>
+      </details>
+      <details>
+        <summary>¿Cómo cuido mi amigurumi?</summary>
+        <p>Evita lavarlo en lavadora; se limpia con un paño húmedo y jabón neutro, y se deja secar a la sombra.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contacto">
+    <h2>¿Ya sabes cuál quieres?</h2>
+    <p>Escríbeme y lo tejemos a tu medida.</p>
+    <a href="https://wa.me/0000000000" class="footer-cta" id="wa-footer" target="_blank">Contactar por WhatsApp</a>
+    <div class="foot-note">Angie Amigurumis, hechos a mano y con amor</div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" aria-label="Cerrar">×</button>
+      <div class="modal-image-wrap">
+        <img id="modal-img" src="" alt="">
+      </div>
+      <div class="modal-body">
+        <span class="modal-category" id="modal-category"></span>
+        <h3 class="modal-name" id="modal-name"></h3>
+        <p class="modal-price" id="modal-price"></p>
+        <p class="modal-desc" id="modal-desc"></p>
+        <a class="modal-cta" id="modal-cta" target="_blank">Preguntar por WhatsApp</a>
+      </div>
     </div>
   </div>
-</div>
 
-<script src="js/app.js"></script>
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <a href="https://wa.me/5210000000000" class="fab-contact" id="fab-contact" target="_blank" aria-label="Contáctame por WhatsApp">
+    <span class="fab-text">Contáctame</span>
+    <span class="fab-icon">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </span>
+  </a>
+
+  <script src="js/app.js"></script>
 </body>
 </html>

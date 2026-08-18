@@ -1,31 +1,11 @@
-/* =========================================================
-   CONFIGURACIÓN — EDITA ESTOS VALORES
-   ========================================================= */
-const AIRTABLE_TOKEN = 'TU_PERSONAL_ACCESS_TOKEN_AQUI';
-const AIRTABLE_BASE_ID = 'TU_BASE_ID_AQUI';
-const AIRTABLE_TABLE_NAME = 'Productos';
-
-const WHATSAPP_NUMBER = '0000000000'; // Ej: 5215512345678
-
-/* Imágenes del carrusel destacado (tú las pones aquí) */
-const CAROUSEL_IMAGES = [
-  'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&h=750&fit=crop',
-  'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&h=750&fit=crop',
-  'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&h=750&fit=crop',
-  'https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=600&h=750&fit=crop',
-  'https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=600&h=750&fit=crop'
-];
-
-/* =========================================================
-   NO TOCAR NADA DEBAJO
-   ========================================================= */
+// const AIRTABLE_TOKEN = '';
+const WHATSAPP_NUMBER = '0000000000';
 
 const API_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${encodeURIComponent(AIRTABLE_TABLE_NAME)}`;
 const GRID_MAP = { '1': 'grid-mini', '2': 'grid-clasico', '3': 'grid-premium' };
 const CAT_NAMES = { '1': 'Mini', '2': 'Clásico', '3': 'Premium' };
 const CAT_COLORS = { '1': 'var(--pink-deep)', '2': 'var(--blue-deep)', '3': 'var(--green-deep)' };
 
-/* ---------- UTILS ---------- */
 function escapeHtml(text) {
   const div = document.createElement('div');
   div.textContent = text;
@@ -43,7 +23,6 @@ function placeholderSVG(label) {
   </div>`;
 }
 
-/* ---------- SKELETON ---------- */
 function renderSkeletons() {
   const count = window.innerWidth < 640 ? 3 : 4;
   Object.values(GRID_MAP).forEach(gridId => {
@@ -58,17 +37,22 @@ function renderSkeletons() {
   });
 }
 
-/* ---------- CARRUSEL ---------- */
-function initCarousel() {
+function initCarousel(imageUrls) {
   const carousel = document.getElementById('carousel');
   const dotsContainer = document.getElementById('carousel-dots');
-  if (!carousel || CAROUSEL_IMAGES.length === 0) return;
+  if (!carousel) return;
 
-  carousel.innerHTML = CAROUSEL_IMAGES.map(url =>
-    `<div class="carousel-item"><img src="${url}" alt="Destacado" loading="lazy"></div>`
+  if (!imageUrls || imageUrls.length === 0) {
+    carousel.innerHTML = '<div style="text-align:center;padding:2rem;color:var(--ink-soft);">No hay productos destacados aún.</div>';
+    if (dotsContainer) dotsContainer.innerHTML = '';
+    return;
+  }
+
+  carousel.innerHTML = imageUrls.map(url =>
+    `<div class="carousel-item"><img src="${url}" alt="Carrusel" loading="lazy"></div>`
   ).join('');
 
-  dotsContainer.innerHTML = CAROUSEL_IMAGES.map((_, i) =>
+  dotsContainer.innerHTML = imageUrls.map((_, i) =>
     `<span class="dot ${i === 0 ? 'active' : ''}" data-index="${i}"></span>`
   ).join('');
 
@@ -89,13 +73,13 @@ function initCarousel() {
   dots.forEach((d, i) => d.addEventListener('click', () => goTo(i)));
 
   document.getElementById('carousel-prev')?.addEventListener('click', () => {
-    goTo((current - 1 + CAROUSEL_IMAGES.length) % CAROUSEL_IMAGES.length);
+    goTo((current - 1 + imageUrls.length) % imageUrls.length);
   });
   document.getElementById('carousel-next')?.addEventListener('click', () => {
-    goTo((current + 1) % CAROUSEL_IMAGES.length);
+    goTo((current + 1) % imageUrls.length);
   });
 
-  setInterval(() => goTo((current + 1) % CAROUSEL_IMAGES.length), 4500);
+  setInterval(() => goTo((current + 1) % imageUrls.length), 4500);
 
   let startX = 0;
   carousel.addEventListener('touchstart', e => startX = e.touches[0].clientX, { passive: true });
@@ -103,8 +87,8 @@ function initCarousel() {
     const diff = startX - e.changedTouches[0].clientX;
     if (Math.abs(diff) > 50) {
       diff > 0
-        ? goTo((current + 1) % CAROUSEL_IMAGES.length)
-        : goTo((current - 1 + CAROUSEL_IMAGES.length) % CAROUSEL_IMAGES.length);
+        ? goTo((current + 1) % imageUrls.length)
+        : goTo((current - 1 + imageUrls.length) % imageUrls.length);
     }
   }, { passive: true });
 
@@ -121,19 +105,30 @@ function initCarousel() {
   }, { passive: true });
 }
 
-/* ---------- MOBILE MENU ---------- */
 function initMobileMenu() {
   const toggle = document.getElementById('menuToggle');
   const close = document.getElementById('menuClose');
   const menu = document.getElementById('mobileMenu');
-  if (toggle) toggle.addEventListener('click', () => menu.classList.add('open'));
-  if (close) close.addEventListener('click', () => menu.classList.remove('open'));
+  const fab = document.getElementById('fab-contact');
+
+  function openMenu() {
+    menu.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    if (fab) fab.classList.add('hidden');
+  }
+  function closeMenu() {
+    menu.classList.remove('open');
+    document.body.style.overflow = '';
+    if (fab) fab.classList.remove('hidden');
+  }
+
+  if (toggle) toggle.addEventListener('click', openMenu);
+  if (close) close.addEventListener('click', closeMenu);
   document.querySelectorAll('.menu-link').forEach(a =>
-    a.addEventListener('click', () => menu.classList.remove('open'))
+    a.addEventListener('click', closeMenu)
   );
 }
 
-/* ---------- PRODUCT CARD ---------- */
 function createProductCard(product) {
   const f = product.fields;
   const name = f.Nombre || 'Sin nombre';
@@ -163,7 +158,6 @@ function createProductCard(product) {
   return card;
 }
 
-/* ---------- MODAL ---------- */
 function openModal(product) {
   const f = product.fields;
   const name = f.Nombre || 'Sin nombre';
@@ -208,21 +202,32 @@ function initModal() {
   });
 }
 
-/* ---------- FETCH & RENDER ---------- */
+function initFooter() {
+  const link = document.getElementById('wa-footer');
+  if (link && WHATSAPP_NUMBER !== '0000000000') {
+    link.href = `https://wa.me/${WHATSAPP_NUMBER}`;
+  }
+}
+
 async function fetchProducts() {
   try {
-    const response = await fetch(API_URL, {
-      headers: {
-        'Authorization': `Bearer ${AIRTABLE_TOKEN}`,
-        'Content-Type': 'application/json'
-      }
-    });
+    
+    const response = await fetch('./data.json');
+
     if (!response.ok) throw new Error(`Error ${response.status}`);
     const data = await response.json();
+
+    const destacados = data.records
+      .filter(r => r.fields.Destacado === true || r.fields.Carrusel === true)
+      .map(r => r.fields.Imagen?.[0]?.url)
+      .filter(Boolean);
+    initCarousel(destacados);
+
     renderProducts(data.records);
+
   } catch (error) {
     console.error(error);
-    showError('No se pudieron cargar los productos. Revisa tu configuración de Airtable.');
+    showError('No se pudieron cargar los productos :(');
   }
 }
 
@@ -256,18 +261,8 @@ function showError(msg) {
   });
 }
 
-/* ---------- FOOTER ---------- */
-function initFooter() {
-  const link = document.getElementById('wa-footer');
-  if (link && WHATSAPP_NUMBER !== '0000000000') {
-    link.href = `https://wa.me/${WHATSAPP_NUMBER}`;
-  }
-}
-
-/* ---------- INIT ---------- */
 document.addEventListener('DOMContentLoaded', () => {
   renderSkeletons();
-  initCarousel();
   initMobileMenu();
   initModal();
   initFooter();

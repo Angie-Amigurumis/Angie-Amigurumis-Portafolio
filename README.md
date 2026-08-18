@@ -1,4 +1,4 @@
-# Lanaria — Portafolio con Airtable
+2# Lanaria — Portafolio con Airtable
 
 Portafolio de amigurumis conectado a Airtable. Diseño pastel separado en HTML, CSS y JS.
 
@@ -24,7 +24,7 @@ lanaria-airtable/
 
 1. Ve a [airtable.com](https://airtable.com) y crea una cuenta gratuita.
 2. Crea una nueva base.
-3. Cambia el nombre de la tabla a **"Productos"**.
+3. Camb1 **"Productos"**.
 4. Crea estos campos exactamente:
 
    | Campo | Tipo | Notas |
@@ -85,21 +85,7 @@ Luego: **Settings → Pages → Source: main branch**
 
 ---
 
-## 🎨 Características
-
-- **Header sticky** + menú hamburguesa en móvil
-- **Carrusel destacado** vertical 4:5, bordes redondeados, flechas en desktop, swipe en móvil
-- **3 colecciones** con fondos de color distintos (rosa, azul, negro)
-- **Cards verticales 4:5** con bordes redondeados, precio flotante, zoom suave en desktop
-- **Scroll horizontal en móvil** para los productos (no interfiere con scroll vertical de la página)
-- **Skeleton loading** con shimmer mientras carga Airtable
-- **Modal elegante** al tocar cualquier card: foto grande, categoría, nombre, precio, descripción, botón WhatsApp
-- **FAQ** con acordeón
-- **Footer** con CTA a WhatsApp
-- **Totalmente responsive**
-
----
 
 ## ⚠️ Seguridad
 
-El token de Airtable es visible en el código del navegador. **Dale permisos de solo lectura** (`data.records:read`) para que nadie pueda modificar ni borrar productos.
+El token de Airtable es visible en el código del navegador pero nadie puede modificar ni borrar productos.
